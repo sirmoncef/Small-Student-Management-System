@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Student Management System{% endblock %}</title>
+    
+    <link rel="icon" href="{% static 'images/icon.jpg' %}" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+        .header img {
+            width: 170px;
+            border-radius: 50%;
+        }
+        .header h3 {
+            font-size: 50px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{% static 'images/icon.jpg' %}" alt="logo">
+        <h3>Welcome To Our Student Management System</h3>
+    </div>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        &copy; STM2024. All rights reserved.
+    </footer>
+</body>
+</html>

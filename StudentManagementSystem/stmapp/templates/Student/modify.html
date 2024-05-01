@@ -1,0 +1,18 @@
+{% extends 'Student/base.html' %}
+
+{% block title %}Modify Student - Student Management System{% endblock %}
+
+{% load static %} 
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/modify.css' %}">
+
+<div class="content">
+    <h2>Modify Student</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save Changes">
+    </form>
+</div>
+{% endblock %}
