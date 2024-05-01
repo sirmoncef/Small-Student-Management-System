@@ -1,4 +1,4 @@
-/* addshow.css */
+
 .content {
     padding: 20px;
     display: flex;
@@ -42,9 +42,8 @@
 .add form button:hover {
     background-color: #0056b3;
 }
-/* addshow.css */
 
-/* Common styles for buttons */
+
 .modify-btn,
 .delete-btn {
     padding: 8px 16px;
@@ -57,28 +56,26 @@
     font-size: 14px;
 }
 
-/* Style for modify button */
+
 .modify-btn {
-    background-color: #28a745; /* Green */
+    background-color: #28a745; 
     color: white;
-    margin-right: 5px; /* Adjust margin as needed */
+    margin-right: 5px; 
 }
 
 .modify-btn:hover {
-    background-color: #218838; /* Darker green */
-}
+    background-color: #218838; 
 
-/* Style for delete button */
+
 .delete-btn {
-    background-color: #dc3545; /* Red */
+    background-color: #dc3545; 
     color: white;
 }
 
 .delete-btn:hover {
-    background-color: #c82333; /* Darker red */
-}
+    background-color: #c82333; 
 
-/* Styles for table */
+
 table {
     width: 100%;
     border-collapse: collapse;
